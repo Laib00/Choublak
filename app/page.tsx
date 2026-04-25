@@ -35,7 +35,7 @@ export default function HomePage() {
           <h1 className="anim-fade-up anim-delay-1 font-script text-white"
             style={{ fontSize: "clamp(3rem, 8vw, 6.5rem)", lineHeight: 1.05,
               textShadow: "0 2px 30px rgba(0,0,0,0.45), 0 1px 4px rgba(0,0,0,0.5)" }}>
-            Choublak Drink
+            Choublak Teas
           </h1>
 
           {/* Tagline paragraph — same style as PureLeaf */}
@@ -100,7 +100,7 @@ export default function HomePage() {
             </p>
             <h2 className="font-script text-white mt-2"
               style={{ fontSize: "clamp(2.5rem, 5vw, 4.5rem)", textShadow: "0 2px 20px rgba(0,0,0,0.5)" }}>
-              Our Finest Teas
+              Our Finest Products
             </h2>
             <div className="w-10 h-px bg-white/40 mx-auto mt-5 mb-7"/>
             <p className="font-sans text-white leading-relaxed mb-9 max-w-md mx-auto"
@@ -110,7 +110,7 @@ export default function HomePage() {
               the full collection to find your cup.
             </p>
             <Link href="/products" className="btn-outline-white">
-              VIEW OUR TEAS
+              VIEW OUR PRODUCTS
             </Link>
           </ScrollReveal>
         </div>
