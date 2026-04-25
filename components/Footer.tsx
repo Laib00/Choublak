@@ -16,7 +16,9 @@ export default function Footer() {
 
             {/* Instagram call-out */}
             <a
-              href="#"
+              href="https://www.instagram.com/choublak_tea"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Follow Choublak on Instagram"
               className="inline-flex items-center gap-3 px-4 py-2.5 rounded-full border transition-all hover:bg-white/5"
               style={{ borderColor: "#2a2a2a" }}
@@ -58,18 +60,33 @@ export default function Footer() {
           {[
             { title: "SHOP", links: [{ l: "All Products", h: "/products" }, { l: "Choublak Tea", h: "/products/choublak-tea" }, { l: "Kremas", h: "/products/kremas" }, { l: "Packages", h: "/packages" }, { l: "Cart", h: "/cart" }] },
             { title: "COMPANY", links: [{ l: "Our Story", h: "/about" }, { l: "Sourcing", h: "#" }, { l: "Sustainability", h: "#" }] },
-            { title: "FOLLOW", links: [{ l: "Instagram", h: "#" }, { l: "Pinterest", h: "#" }, { l: "X (Twitter)", h: "#" }] },
+            { title: "FOLLOW", links: [{ l: "Instagram", h: "https://www.instagram.com/choublak_tea" }, { l: "Facebook", h: "https://www.facebook.com/share/18jj1ZpMLc/" }] },
           ].map(col => (
             <div key={col.title}>
               <h4 className="font-sans font-bold text-white/30 mb-5"
                 style={{ fontSize: "0.6rem", letterSpacing: "0.25em" }}>{col.title}</h4>
               <ul className="space-y-3">
-                {col.links.map(l => (
-                  <li key={l.l}>
-                    <Link href={l.h} className="text-white/50 hover:text-white transition-colors"
-                      style={{ fontSize: "0.82rem" }}>{l.l}</Link>
-                  </li>
-                ))}
+                {col.links.map(l => {
+                  const isExternal = l.h.startsWith("http");
+                  return (
+                    <li key={l.l}>
+                      {isExternal ? (
+                        <a
+                          href={l.h}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-white/50 hover:text-white transition-colors"
+                          style={{ fontSize: "0.82rem" }}
+                        >
+                          {l.l}
+                        </a>
+                      ) : (
+                        <Link href={l.h} className="text-white/50 hover:text-white transition-colors"
+                          style={{ fontSize: "0.82rem" }}>{l.l}</Link>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}
