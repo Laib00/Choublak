@@ -31,17 +31,18 @@ export default function Navbar() {
           <img src="/images/logo.png" alt="Choublak"
             className="h-20 w-auto object-contain"
             style={{ maxHeight: "84px" }}/>
-          <img
-            src="/images/registered.png"
-            alt="Registered trademark"
-            className="object-contain"
+          <span
+            aria-label="Registered trademark"
+            className="font-sans text-white/80"
             style={{
-              width: "14px",
-              height: "14px",
-              marginTop: "18px",
-              filter: "invert(1) brightness(1.1)",
+              fontSize: "13px",
+              lineHeight: 1,
+              marginTop: "20px",
+              fontWeight: 500,
             }}
-          />
+          >
+            ®
+          </span>
         </Link>
 
         {/* Desktop nav — right side, exactly like PureLeaf uppercase spaced links */}
