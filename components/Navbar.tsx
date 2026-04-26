@@ -27,17 +27,18 @@ export default function Navbar() {
       <nav className="max-w-[1400px] mx-auto px-6 lg:px-14 h-[96px] flex items-center justify-between">
 
         {/* Logo — top left, larger, with registered ® mark */}
-        <Link href="/" className="flex-shrink-0 group flex items-start gap-1">
+        <Link href="/" className="flex-shrink-0 group flex items-start">
           <img src="/images/logo.png" alt="Choublak"
             className="h-20 w-auto object-contain"
             style={{ maxHeight: "84px" }}/>
           <span
             aria-label="Registered trademark"
-            className="font-sans text-white/80"
+            className="font-sans text-white/85"
             style={{
-              fontSize: "13px",
+              fontSize: "11px",
               lineHeight: 1,
-              marginTop: "20px",
+              marginTop: "22px",
+              marginLeft: "-4px",
               fontWeight: 500,
             }}
           >
