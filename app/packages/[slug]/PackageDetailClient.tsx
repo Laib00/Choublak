@@ -154,9 +154,8 @@ export default function PackageDetailClient({ pkg }: { pkg: Package }) {
             )}
 
             {/* Trust strip */}
-            <div className="grid grid-cols-3 gap-3 pt-6 border-t" style={{ borderColor: "#1f1f1f" }}>
+            <div className="grid grid-cols-2 gap-3 pt-6 border-t" style={{ borderColor: "#1f1f1f" }}>
               {[
-                { icon: "🚚", label: "Free shipping", sub: "Over $40" },
                 { icon: "🔒", label: "Secure pay", sub: "Via Stripe" },
                 { icon: "🍃", label: "Eco packaging", sub: "Compostable" },
               ].map(b => (

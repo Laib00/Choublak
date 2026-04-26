@@ -137,12 +137,6 @@ export default function CartClient() {
                   <span>Tax</span>
                   <span className="text-white/40">Calculated at checkout</span>
                 </div>
-                {shipping > 0 && (
-                  <p className="font-sans text-xs rounded-xl px-3 py-2"
-                    style={{ color: "#8ecd84", background: "rgba(90,148,82,0.1)" }}>
-                    Add ${(40 - subtotal).toFixed(2)} more for free shipping
-                  </p>
-                )}
               </div>
               <div className="border-t pt-4 mb-7 flex justify-between items-baseline"
                 style={{ borderColor: "#262626" }}>

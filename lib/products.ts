@@ -63,9 +63,9 @@ export const products: Product[] = [
     name: "Kremas",
     slug: "kremas",
     price: 3.50,
-    shortDescription: "A bold, velvety hibiscus infusion — available in three sizes.",
+    shortDescription: "A traditional, creamy, rhum-based Haitian beverage — available in three sizes.",
     description:
-      "Kremas is a bolder, richer take on our Hibiscus sabdariffa leaf — a velvety ruby-red infusion that carries centuries of tradition into every sip. Tart, floral and lingering, it is a tea made for gatherings, gourmet moments, and the kind of slow afternoons heritage is built on. Rich in antioxidants and vitamin C, Kremas is as nourishing as it is delightful — equally stunning piping hot or poured over ice.",
+      "Kremas is a traditional, creamy, rhum-based Haitian beverage known for its rich, sweet flavor. It features a blend of milk and spices, often served chilled at celebrations like weddings and holidays.",
     origin: "Hibiscus Sabdariffa",
     weight: "0.75 oz",
     steepTime: "Ready to drink",
