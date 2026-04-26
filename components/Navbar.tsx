@@ -33,13 +33,13 @@ export default function Navbar() {
             style={{ maxHeight: "84px" }}/>
           <span
             aria-label="Registered trademark"
-            className="font-sans text-white/85"
+            className="font-sans text-white/90"
             style={{
-              fontSize: "11px",
+              fontSize: "9px",
               lineHeight: 1,
-              marginTop: "22px",
-              marginLeft: "-4px",
-              fontWeight: 500,
+              marginTop: "16px",
+              marginLeft: "-8px",
+              fontWeight: 600,
             }}
           >
             ®
