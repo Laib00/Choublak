@@ -26,11 +26,22 @@ export default function Navbar() {
       style={{ backgroundColor: "#111111" }}>
       <nav className="max-w-[1400px] mx-auto px-6 lg:px-14 h-[96px] flex items-center justify-between">
 
-        {/* Logo — top left, larger */}
-        <Link href="/" className="flex-shrink-0 group flex items-center">
+        {/* Logo — top left, larger, with registered ® mark */}
+        <Link href="/" className="flex-shrink-0 group flex items-start gap-1">
           <img src="/images/logo.png" alt="Choublak"
             className="h-20 w-auto object-contain"
             style={{ maxHeight: "84px" }}/>
+          <img
+            src="/images/registered.png"
+            alt="Registered trademark"
+            className="object-contain"
+            style={{
+              width: "14px",
+              height: "14px",
+              marginTop: "18px",
+              filter: "invert(1) brightness(1.1)",
+            }}
+          />
         </Link>
 
         {/* Desktop nav — right side, exactly like PureLeaf uppercase spaced links */}
