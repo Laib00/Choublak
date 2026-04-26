@@ -81,7 +81,7 @@ export default function CartClient() {
                               <span className="mx-1.5">·</span>
                             </>
                           )}
-                          {unitWeight} · 100% Hibiscus
+                          {unitWeight}{item.product.slug !== "kremas" && " · 100% Hibiscus"}
                         </p>
                       </div>
                       <button onClick={() => removeItem(key)}

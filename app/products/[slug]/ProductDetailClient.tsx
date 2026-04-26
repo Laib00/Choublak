@@ -94,7 +94,9 @@ export default function ProductDetailClient({ product }: { product: Product }) {
             {/* Spec pills */}
             <div className="grid grid-cols-2 gap-3 mt-5">
               {[
-                { label: "Ingredient", value: "100% Hibiscus" },
+                ...(product.slug === "kremas"
+                  ? []
+                  : [{ label: "Ingredient", value: "100% Hibiscus" }]),
                 { label: "Weight", value: displayWeight },
                 { label: "Temperature", value: product.temperature },
                 { label: "Steep Time", value: product.steepTime },
